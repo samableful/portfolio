@@ -1,0 +1,192 @@
+header {
+    background-color: #00796b; /* A Pine Green, Lorax who speaks for the trees would be happy*/
+    color: white; /* White text color for clarity */
+    padding: 2px;
+    text-align: center;
+	position: sticky;
+	top: 0;
+}
+
+body {
+	background-color: #53c0c3; /* Light blue */
+	font-family: 'Arial', sans-serif;
+    color: #004d40; /* Darker blue for text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main "Samableful" title*/
+h1 {
+	background-color: #c3d05a;
+	font-size: 2.5rem; 
+	height: 80px;
+	text-align: left;
+	padding: 20px;
+	margin: 0;
+}
+/* Main "Samableful" solgan*/
+h1 span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+div#banner { 
+    max-width: 1200px; /* Maximum width for the banner */
+    margin: 0 auto; /* Center the banner */
+	font-family: 'Arial', sans-serif;
+}
+
+/* Navigation links styles */
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Spacing between links */
+}
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+nav ul li a:hover {
+    color: #c3d05a; /* Change to yolk yellow on hover for a playful touch */
+}
+
+#facelogo {
+    position: absolute;
+    top: -115px;
+    right: 20px;
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    fill: #004d40; /* Same color as "Samableful" */
+}
+
+/* When the user scrolls, logo moves to links bar, styles there */
+.scrolled #facelogo {
+    position: fixed;
+    top: 1px;
+    right: 10px;
+    width: 35px; /* Adjust size for nav */
+    fill: #5a80a9;
+}
+
+/* Yolky text styles */
+.highlighted-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #c3d05a;
+    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+
+/* Adjust scroll point to accomidate links*/
+#about {
+    scroll-margin-top: 80px; 
+}
+#approach {
+    scroll-margin-top: 80px; 
+}
+#knowledge {
+    scroll-margin-top: 80px; 
+}
+
+/* Overall section styles */
+.section {
+	max-width: 900px;
+	background: #00796b; /* The deep teal color from the header */
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	color: white;
+}
+.section a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.section a:hover {
+    color: #c3d05a; /* Change to yolk yellow on hover for a playful touch */
+}
+
+.title {
+	font-size: 26px;
+	font-weight: bold;
+    color: white;
+	margin-bottom: 20px;
+	text-align: center;	
+}
+
+.qa-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 15px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.qa-item {
+	background: #c3d05a;
+	color: #004d40;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	transition: transform 0.3s ease-in-out;
+	min-height: 140px; /* Adjust this to a comfortable height */
+}
+
+.qa-item:hover {
+	transform: scale(1.07);
+}
+
+.qa-item img {
+	max-width: 70%;
+	max-height: 50%;
+	flex-grow: 1; /* Allows the image to take up remaining space */
+    object-fit: contain; /* Ensures the image scales properly */
+}
+.qa-item span {
+    margin-top: 0px; 
+}
+
+footer {
+	display: flex;
+    background-color: #00796b; /* A Pine Green, Lorax who speaks for the trees would be happy*/
+	height: 360px;
+    color: white; /* White text color for clarity */
+    padding: 2px;
+	position: sticky;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+}
+#footerlogo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    fill: #c3d05a; /* Same color as "Samableful" */
+}
+
+/* Change header views to accomidate small screens. */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem; /* Reduce heading size */
+        padding-right: 100px; /* Make room for the logo */
+    }
+
+    h1 span {
+        font-size: 1.3rem; /* Reduce subtitle size */
+    }
+}
